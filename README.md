@@ -92,4 +92,4 @@ The rest is shaders and rendering stuff.
 ## License
 MIT License.
 
-See my website for a [more detailed copyright notice](https://weigert.vsos.ethz.ch/copyright-notice/).
+See Nicholas website for a [more detailed copyright notice](https://weigert.vsos.ethz.ch/copyright-notice/).
