@@ -2,7 +2,7 @@
 
 ## My input (Paweł)
 
-I'd found weigert's [Simple Hydrology](https://github.com/weigert/SimpleHydrology) repo and I became very interested in how it works. Alas, original repo isn't made for running on Windows and I had no Linux box to run it on and no desire to configure one for that one thing, so I hacked around it until it compiled and run successfully on Windows using Visual Studio 2017. It is also compiled as a x64 binary, which I believe isn't the case for the original. I've also added rotating of the terrain via left and right arrow as the original relied on second wheel on a mouse (??) to do it. Hopefully it can be useful for someone like me.
+I'd found weigert's [Simple Hydrology](https://github.com/weigert/SimpleHydrology) repo and I became very interested in how it works. Alas, original repo isn't made for running on Windows and I had no Linux box to run it on and no desire to configure one for that one thing, so I hacked around it until it compiled and run successfully on Windows using Visual Studio 2017. It is also compiled as a x64 binary, which I believe isn't the case for the original. I've also added rotating of the terrain via left and right arrow as the original relied on second wheel on a mouse (??) to do it, as well as I had to change some semantics around bool arrays for droplets, as the way they were originally coded didn't play well with MSVC. Same goes for including source files in TinyEngine.h - MSVC complained about it (as in - the separate source files that were included were all marked with errors and solution didn't compile), so I just actually included them in that header.
 
 Below is copied README from original repo with some minor changes.
 
@@ -12,6 +12,8 @@ All the stuff apart from what I've described earlier - credits to weigert, I am 
 
 Proof that I got it working:
 ![Proof](https://github.com/pawel-mazurkiewicz/SimpleHydrologyWindows/raw/master/simplehydrologyonwindows.png)
+
+Hopefully it can be useful for someone like me.
 
 ## Summary
 
